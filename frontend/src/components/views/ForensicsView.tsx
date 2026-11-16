@@ -139,7 +139,6 @@ export const ForensicsView: React.FC<ForensicsViewProps> = ({
               const inv = investigations.find((i) => i.id === e.target.value)
               if (inv) onSelectInvestigation(inv)
             }}
-            className="w-full sm:w-auto min-w-[320px] bg-gray-50 border border-gray-300 rounded-lg p-2 text-xs font-medium text-gray-900 focus:outline-none focus:ring-1 focus:ring-brand-500"
             className="w-full sm:w-auto min-w-0 sm:min-w-[260px] max-w-full bg-gray-50 border border-gray-300 rounded-lg p-2 text-xs font-medium text-gray-900 focus:outline-none focus:ring-1 focus:ring-brand-500"
           >
             {investigations.map((inv) => (

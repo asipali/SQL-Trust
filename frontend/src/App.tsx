@@ -388,10 +388,8 @@ export default function App() {
         }}
       />
 
-      {/* Main Content View Area (Fully responsive, min-w-0, no horizontal overflow) */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-3 py-4 sm:px-6 sm:py-6 lg:px-8 overflow-x-hidden min-w-0">
-        {/* Main Content View Area (Fully responsive, min-w-0, fluid width up to 1720px, no horizontal overflow) */}
-        <main className="flex-1 w-full max-w-[1720px] mx-auto px-3 py-4 sm:px-6 sm:py-6 lg:px-8 overflow-x-hidden min-w-0">
+      {/* Main Content View Area (Fully responsive, min-w-0, fluid width up to 1720px, no horizontal overflow) */}
+      <main className="flex-1 w-full max-w-[1720px] mx-auto px-3 py-4 sm:px-6 sm:py-6 lg:px-8 overflow-x-hidden min-w-0">
           <AnimatePresence mode="wait">
             {!isAuthorized ? (
               <motion.div
