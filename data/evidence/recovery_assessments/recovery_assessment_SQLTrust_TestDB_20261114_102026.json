@@ -1,0 +1,207 @@
+{
+  "assessed_at": "2026-11-14T10:20:25.983000",
+  "assessment_id": "1cc0a0c5-5bc8-4071-9e07-97db55664967",
+  "assessment_name": "Test_Assessment_SQLTrust_TestDB",
+  "chain_segment_count": 2,
+  "chain_validation_status": "MISSING_LOGS",
+  "checkpoint_lsn": "42000000189600001",
+  "confidence_rationale": "UNASSESSED: Critical monitoring telemetry gaps detected around the recovery window. Absence of telemetry cannot be treated as evidence of safety. Score suppressed.",
+  "database_name": "SQLTrust_TestDB",
+  "first_lsn": "42000000118400001",
+  "has_sufficient_evidence": false,
+  "last_lsn": "42000000195200001",
+  "missing_telemetry": [
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "328fe066-874c-4c4b-9e02-4ccb39206065"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "328fe066-874c-4c4b-9e02-4ccb39206065",
+      "time_delta_seconds": -9175,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "3c5b0108-7114-4fa0-844b-c4362a14c69d"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "3c5b0108-7114-4fa0-844b-c4362a14c69d",
+      "time_delta_seconds": -11747,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "86daa529-c224-4f39-b2d3-80f7599d91da"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "86daa529-c224-4f39-b2d3-80f7599d91da",
+      "time_delta_seconds": -6,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "a16039b8-d0ec-41a8-a919-d7d882a26f84"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "a16039b8-d0ec-41a8-a919-d7d882a26f84",
+      "time_delta_seconds": -658,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "b34ba557-a322-4397-bff1-e8353bf38f22"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "b34ba557-a322-4397-bff1-e8353bf38f22",
+      "time_delta_seconds": -12634,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "fcb50e07-3edc-4dd0-bf9f-77e40431b7b3"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "fcb50e07-3edc-4dd0-bf9f-77e40431b7b3",
+      "time_delta_seconds": -7727,
+      "weight_applied": -25.0
+    }
+  ],
+  "model_version": "1.0.0",
+  "negative_indicators": [],
+  "positive_indicators": [
+    {
+      "description": "Backup payload verified with SHA-256 (0a8ae824d3ef8559...) and RESTORE VERIFYONLY CHECKSUM.",
+      "evidence_source": "MODULE_1_BACKUP",
+      "impact_direction": "POSITIVE",
+      "metadata": {
+        "sha256": "0a8ae824d3ef855908c4a90b7007fd1f05dff750cb0c7fd3247d864d5f04b7e5"
+      },
+      "relationship_type": "CONFIRMED",
+      "source_record_id": "1d6314da-30be-4c17-89c2-1679330ec22f",
+      "time_delta_seconds": 0,
+      "weight_applied": 20.0
+    },
+    {
+      "description": "Immutable S3 Object Lock active in COMPLIANCE mode until 2026-12-14 10:20:24.",
+      "evidence_source": "MODULE_1_BACKUP",
+      "impact_direction": "POSITIVE",
+      "metadata": {
+        "mode": "COMPLIANCE",
+        "version_id": "67181ddb1a542d50961451080716e2d9"
+      },
+      "relationship_type": "CONFIRMED",
+      "source_record_id": "1d6314da-30be-4c17-89c2-1679330ec22f",
+      "time_delta_seconds": 0,
+      "weight_applied": 15.0
+    }
+  ],
+  "recovery_point_id": "54698943-1c06-4678-b8ce-5c25864fea16",
+  "recovery_point_time": "2026-11-14T10:20:24.553000",
+  "recovery_point_type": "LOG",
+  "server_name": "ASIP_5CD5347GKM\\SQLEXPRESS",
+  "signature": "q0EBuLv0keSVLwlhv4BiHgaQOcRqaIc5k8lOyayN8W26w+rH2NfF+n2DkK8QB4S03QYFYi/I4fjAH2VEmWb/Aw==",
+  "trust_classification": "UNASSESSED",
+  "trust_score": null,
+  "uncertainty_factors": [
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "328fe066-874c-4c4b-9e02-4ccb39206065"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "328fe066-874c-4c4b-9e02-4ccb39206065",
+      "time_delta_seconds": -9175,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "3c5b0108-7114-4fa0-844b-c4362a14c69d"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "3c5b0108-7114-4fa0-844b-c4362a14c69d",
+      "time_delta_seconds": -11747,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "86daa529-c224-4f39-b2d3-80f7599d91da"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "86daa529-c224-4f39-b2d3-80f7599d91da",
+      "time_delta_seconds": -6,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "a16039b8-d0ec-41a8-a919-d7d882a26f84"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "a16039b8-d0ec-41a8-a919-d7d882a26f84",
+      "time_delta_seconds": -658,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "b34ba557-a322-4397-bff1-e8353bf38f22"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "b34ba557-a322-4397-bff1-e8353bf38f22",
+      "time_delta_seconds": -12634,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "Monitoring telemetry gap detected around recovery window: 'Critical Telemetry Collection Gap Detected'. Telemetry blindness present.",
+      "evidence_source": "MONITORING_HEALTH",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {
+        "alert_id": "fcb50e07-3edc-4dd0-bf9f-77e40431b7b3"
+      },
+      "relationship_type": "PROBABLE",
+      "source_record_id": "fcb50e07-3edc-4dd0-bf9f-77e40431b7b3",
+      "time_delta_seconds": -7727,
+      "weight_applied": -25.0
+    },
+    {
+      "description": "No Module 3 forensic baseline snapshot available prior to recovery point. Schema state unverified.",
+      "evidence_source": "MODULE_3_BASELINE",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {},
+      "relationship_type": "UNKNOWN",
+      "source_record_id": "NONE",
+      "time_delta_seconds": 0,
+      "weight_applied": -15.0
+    }
+  ]
+}

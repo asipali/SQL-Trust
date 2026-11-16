@@ -1,0 +1,39 @@
+# ==============================================================================
+# SQL-TRUST — Local Container Infrastructure (Starter Configuration)
+# Services: SeaweedFS (Master + Volume + S3 API)
+# Security: Bound strictly to 127.0.0.1 (local loopback only)
+# ==============================================================================
+
+version: '3.8'
+
+services:
+  seaweedfs:
+    image: chrislusf/seaweedfs:latest
+    container_name: sqltrust-seaweedfs
+    restart: unless-stopped
+    command: "server -dir=/data -s3 -s3.port=8333 -s3.config=/etc/seaweedfs/s3.json -ip=seaweedfs"
+    environment:
+      - WEED_S3_PORT=8333
+      - S3_ACCESS_KEY_ID=${S3_ACCESS_KEY_ID:-sqltrust_admin}
+      - S3_SECRET_ACCESS_KEY=${S3_SECRET_ACCESS_KEY:-sqltrust_secret_key}
+    ports:
+      # Master port
+      - "127.0.0.1:9333:9333"
+      # Volume server port
+      - "127.0.0.1:8888:8080"
+      # S3 compatible endpoint
+      - "127.0.0.1:8333:8333"
+    volumes:
+      - seaweedfs_data:/data
+      - ./seaweedfs-s3.json:/etc/seaweedfs/s3.json:ro
+    networks:
+      - sqltrust-network
+
+networks:
+  sqltrust-network:
+    driver: bridge
+
+volumes:
+  seaweedfs_data:
+    driver: local
+

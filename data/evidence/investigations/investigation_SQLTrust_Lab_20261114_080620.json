@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-11-14T08:06:20.050000",
+  "critical_count": 0,
+  "database_name": "SQLTrust_Lab",
+  "findings": [],
+  "findings_count": 0,
+  "high_count": 0,
+  "investigation_id": "b94b83b4-121a-4841-8770-fe580098890e",
+  "investigation_name": "Test6_No_Telemetry",
+  "ref_baseline_id": "79f2d6fa-55e8-4a5d-9301-5d1356ec0acd",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "ro4YMMhj1Q3RVn11ZLDB9Y2kPESPjjFnf5CUtPNbyB48XAhcztuuSSgfwPZqBlKCNeTVLqge5glwVumk5lrwDw==",
+  "started_at": "2026-11-14T08:06:20.027000",
+  "summary_notes": null,
+  "target_baseline_id": "235c6bcb-497f-4fea-8822-d88a2c8b6a78"
+}

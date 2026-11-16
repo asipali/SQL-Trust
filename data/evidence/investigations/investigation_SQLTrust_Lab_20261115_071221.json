@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-11-15T07:12:21.070000",
+  "critical_count": 0,
+  "database_name": "SQLTrust_Lab",
+  "findings": [],
+  "findings_count": 0,
+  "high_count": 0,
+  "investigation_id": "a3d35dea-cced-49c3-a8f2-d379ff5330df",
+  "investigation_name": "PyTest_Investigation_SelfCompare",
+  "ref_baseline_id": "ae94b22a-8289-4b8f-a81d-a620f40a8caa",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "i5T4KtLPuURA5dS9OTPPi+rYKt6t7mnheqZYgEKNqlU1D8GDrN3tqwHFW24/gUPWxw7nMO6MGeWbzvPmSgLRAA==",
+  "started_at": "2026-11-15T07:12:21.030000",
+  "summary_notes": "Comparing identical baselines",
+  "target_baseline_id": "56561aa3-1444-4504-829f-9470d9fd6254"
+}

@@ -1,0 +1,34 @@
+{
+  "completed_at": "2026-11-15T06:20:38.193000",
+  "critical_count": 0,
+  "database_name": "SQLTrust_TimelineTest_61b17a25",
+  "findings": [
+    {
+      "after_state": {
+        "definition_hash": null,
+        "item_type": "TABLE",
+        "properties": {},
+        "raw_definition": null
+      },
+      "before_state": null,
+      "category": "SCHEMA",
+      "confidence_score": 1.0,
+      "entity_name": "Customers",
+      "explanation": "Newly created table 'dbo.Customers' detected. Did not exist in reference baseline.",
+      "finding_type": "OBJECT_CREATED",
+      "id": "1003fc5d-186c-45be-a9e7-b4de0e42a0ee",
+      "schema_name": null,
+      "severity": "MEDIUM"
+    }
+  ],
+  "findings_count": 1,
+  "high_count": 0,
+  "investigation_id": "8d24adb3-5938-484c-8c37-8111962114be",
+  "investigation_name": "Investigation_SQLTrust_TimelineTest_61b17a25_20261115_062038",
+  "ref_baseline_id": "61f2f89b-3dea-405c-b690-61109c44ab53",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "sK0StAry24F1206RcIqsvrVcTGvYRDka/pwe2Mujf7MKT+QVoiFa8L3Nrglcs1JF7WRzTkKa6fdo0DNW2STMBw==",
+  "started_at": "2026-11-15T06:20:38.120000",
+  "summary_notes": null,
+  "target_baseline_id": "ff492aad-a103-478d-a67d-b64f02d6cbe6"
+}

@@ -1,0 +1,19 @@
+# Pyrefly Configuration for SQL-TRUST
+python-version = "3.12"
+search-path = [
+    ".",
+    "backend",
+    "backend/api",
+    "backend/api/v1",
+    "backend/services",
+    "backend/services/investigation"
+]
+site-package-path = [".venv/Lib/site-packages"]
+ignore-missing-imports = [
+    "backend.services.investigation.*",
+    "backend.api.v1.workflows",
+    "backend.api.v1.*"
+]
+
+[errors]
+missing-import = "ignore"

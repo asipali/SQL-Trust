@@ -1,0 +1,145 @@
+{
+  "completed_at": "2026-11-14T07:47:21.423000",
+  "critical_count": 1,
+  "database_name": "SQLTrust_Lab",
+  "findings": [
+    {
+      "after_state": {
+        "definition_hash": "9ac178eed55f9aa8fa5bacef365c817d25515c4d30a94fbe755d597337806f33",
+        "item_type": "TABLE",
+        "properties": {
+          "columns": [
+            {
+              "column_id": 1,
+              "column_name": "id",
+              "is_identity": true,
+              "is_nullable": false,
+              "max_length": 4,
+              "object_id": 1557580587,
+              "precision": 10,
+              "scale": 0,
+              "type_name": "int"
+            },
+            {
+              "column_id": 2,
+              "column_name": "event_title",
+              "is_identity": false,
+              "is_nullable": true,
+              "max_length": 200,
+              "object_id": 1557580587,
+              "precision": 0,
+              "scale": 0,
+              "type_name": "nvarchar"
+            },
+            {
+              "column_id": 3,
+              "column_name": "notes",
+              "is_identity": false,
+              "is_nullable": true,
+              "max_length": -1,
+              "object_id": 1557580587,
+              "precision": 0,
+              "scale": 0,
+              "type_name": "nvarchar"
+            }
+          ],
+          "create_date": "2026-11-14 13:17:20.227000",
+          "modify_date": "2026-11-14 13:17:20.230000",
+          "type_desc": "USER_TABLE"
+        },
+        "raw_definition": null
+      },
+      "before_state": null,
+      "category": "SCHEMA",
+      "confidence_score": 1.0,
+      "entity_name": "ForensicAuditTest",
+      "explanation": "Newly created table 'dbo.ForensicAuditTest' detected. Did not exist in reference baseline.",
+      "finding_type": "OBJECT_CREATED",
+      "id": "052587d4-50d9-4c6b-a680-b196a1445f64",
+      "schema_name": "dbo",
+      "severity": "MEDIUM"
+    },
+    {
+      "after_state": {
+        "member_name": "forensic_temp_user",
+        "role_name": "db_owner"
+      },
+      "before_state": null,
+      "category": "ROLE_MEMBERSHIP",
+      "confidence_score": 1.0,
+      "entity_name": "db_owner -> forensic_temp_user",
+      "explanation": "Privilege escalation: User 'forensic_temp_user' added to high-privilege role 'db_owner'.",
+      "finding_type": "ROLE_ESCALATION",
+      "id": "60b59470-8d64-41f1-9155-e62b60037ea8",
+      "schema_name": null,
+      "severity": "CRITICAL"
+    },
+    {
+      "after_state": {
+        "is_auto_close_on": true
+      },
+      "before_state": {
+        "is_auto_close_on": false
+      },
+      "category": "CONFIGURATION",
+      "confidence_score": 1.0,
+      "entity_name": "OPTION::IS_AUTO_CLOSE_ON",
+      "explanation": "AUTO_CLOSE toggled. Enabling AUTO_CLOSE clears cache and can facilitate timeline tampering. (Baseline value: 'False', Current value: 'True').",
+      "finding_type": "CONFIG_DRIFT",
+      "id": "6a0a9fcf-056c-4cff-a9de-e2739cd0e632",
+      "schema_name": null,
+      "severity": "HIGH"
+    },
+    {
+      "after_state": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2026-11-14 13:17:20.230000",
+        "default_schema_name": "dbo",
+        "modify_date": "2026-11-14 13:17:20.230000",
+        "principal_id": 5,
+        "principal_name": "forensic_temp_user",
+        "sid_hex": "0x0105000000000009030000001789E833BA9FEC46A18DFFF12C02A292",
+        "type_desc": "SQL_USER"
+      },
+      "before_state": null,
+      "category": "PRINCIPAL",
+      "confidence_score": 1.0,
+      "entity_name": "forensic_temp_user",
+      "explanation": "New database principal 'forensic_temp_user' was created. Requires authorization review.",
+      "finding_type": "USER_ADDED",
+      "id": "db717097-d37a-4e33-94a2-ed2383df4b09",
+      "schema_name": null,
+      "severity": "HIGH"
+    },
+    {
+      "after_state": {
+        "class_desc": "DATABASE",
+        "column_name": null,
+        "grantee_name": "forensic_temp_user",
+        "object_name": null,
+        "object_schema": null,
+        "permission_name": "CONNECT",
+        "state_desc": "GRANT"
+      },
+      "before_state": null,
+      "category": "PERMISSION",
+      "confidence_score": 0.95,
+      "entity_name": "GRANT CONNECT ON DATABASE TO forensic_temp_user",
+      "explanation": "Explicit permission GRANT CONNECT on DATABASE awarded to 'forensic_temp_user'.",
+      "finding_type": "PERMISSION_GRANTED",
+      "id": "f2b298a7-4edd-4c29-88f2-ea1c6f3e3fad",
+      "schema_name": null,
+      "severity": "MEDIUM"
+    }
+  ],
+  "findings_count": 5,
+  "high_count": 2,
+  "investigation_id": "5640211a-e57f-44a6-adaf-d057837caefa",
+  "investigation_name": "Controlled_Lab_Incident_Investigation",
+  "ref_baseline_id": "92841ea1-5d04-4237-be31-f4bf76e9ecc2",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "Os4A7A/DLrIfdrVHpuhnQcntyV3r7uF+L1ooL55NbjurypCYCv6itu3Ewk1BSwFBevUteZXtW16WryV49zfmDg==",
+  "started_at": "2026-11-14T07:47:21.377000",
+  "summary_notes": "Forensic investigation into unauthorized DDL and role escalation",
+  "target_baseline_id": "72b7a0d8-9ea8-4206-81b9-42d7eebdd4ef"
+}

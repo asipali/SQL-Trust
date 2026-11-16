@@ -1,0 +1,63 @@
+{
+  "test_1_consistency": {
+    "passed": true,
+    "manifest_match": true,
+    "findings_count": 0
+  },
+  "test_2_accuracy": {
+    "passed": true,
+    "has_table_created": true,
+    "has_role_escalation_critical": true,
+    "has_user_added": true,
+    "has_config_drift": true,
+    "has_perm_granted": true,
+    "has_col_modified": true
+  },
+  "test_3_ephemeral": {
+    "passed": true,
+    "catalog_blindness_demonstrated": true,
+    "telemetry_capture_success": true
+  },
+  "test_4_encrypted": {
+    "passed": true,
+    "is_encrypted_flagged": true,
+    "raw_definition_none": true,
+    "high_severity_finding": true
+  },
+  "test_5_catalog_resilience": {
+    "passed": true
+  },
+  "test_6_missing_telemetry": {
+    "passed": true,
+    "status": "COMPLETED",
+    "timeline_length": 2
+  },
+  "test_7_timezone": {
+    "passed": true,
+    "timestamp_iso": "2026-11-14T08:11:17.770000"
+  },
+  "test_8_tamper_detection": {
+    "passed": true,
+    "legitimate_valid": true,
+    "tampered_signature_rejected": true,
+    "tampered_sha256_rejected": true
+  },
+  "test_9_worm_compliance": {
+    "passed": true,
+    "has_version_id": true,
+    "retention_mode": "COMPLIANCE",
+    "retention_active": true
+  },
+  "test_10_idempotency": {
+    "passed": true,
+    "count_1": 6,
+    "count_2": 6
+  },
+  "test_11_lab_cleanup": {
+    "passed": true,
+    "residual_users": 0,
+    "residual_tables": 0,
+    "residual_procs": 0,
+    "auto_close_zero": true
+  }
+}

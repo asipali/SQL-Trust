@@ -1,0 +1,222 @@
+[
+  {
+    "viewport": "1920px",
+    "type": "Full Desktop",
+    "width": 1920,
+    "height": 1080,
+    "metrics": {
+      "docScrollWidth": 1920,
+      "windowInnerWidth": 1920,
+      "hasHorizontalScroll": false,
+      "headerWidth": 1920,
+      "headerRight": 1920,
+      "headerClipped": false,
+      "navVisible": true,
+      "menuButtonVisible": false,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": false,
+    "drawer_closed_after_nav": false,
+    "screenshot": "docs/screenshots/viewport_1920.png"
+  },
+  {
+    "viewport": "1648px",
+    "type": "Wide Desktop (Target)",
+    "width": 1648,
+    "height": 1000,
+    "metrics": {
+      "docScrollWidth": 1648,
+      "windowInnerWidth": 1648,
+      "hasHorizontalScroll": false,
+      "headerWidth": 1648,
+      "headerRight": 1648,
+      "headerClipped": false,
+      "navVisible": true,
+      "menuButtonVisible": false,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": false,
+    "drawer_closed_after_nav": false,
+    "screenshot": "docs/screenshots/viewport_1648.png"
+  },
+  {
+    "viewport": "1440px",
+    "type": "Standard Desktop",
+    "width": 1440,
+    "height": 900,
+    "metrics": {
+      "docScrollWidth": 1440,
+      "windowInnerWidth": 1440,
+      "hasHorizontalScroll": false,
+      "headerWidth": 1440,
+      "headerRight": 1440,
+      "headerClipped": false,
+      "navVisible": true,
+      "menuButtonVisible": false,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": false,
+    "drawer_closed_after_nav": false,
+    "screenshot": "docs/screenshots/viewport_1440.png"
+  },
+  {
+    "viewport": "1366px",
+    "type": "Compact Desktop",
+    "width": 1366,
+    "height": 768,
+    "metrics": {
+      "docScrollWidth": 1366,
+      "windowInnerWidth": 1366,
+      "hasHorizontalScroll": false,
+      "headerWidth": 1366,
+      "headerRight": 1366,
+      "headerClipped": false,
+      "navVisible": true,
+      "menuButtonVisible": false,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": false,
+    "drawer_closed_after_nav": false,
+    "screenshot": "docs/screenshots/viewport_1366.png"
+  },
+  {
+    "viewport": "1280px",
+    "type": "Laptop / High-DPI",
+    "width": 1280,
+    "height": 800,
+    "metrics": {
+      "docScrollWidth": 1280,
+      "windowInnerWidth": 1280,
+      "hasHorizontalScroll": false,
+      "headerWidth": 1280,
+      "headerRight": 1280,
+      "headerClipped": false,
+      "navVisible": true,
+      "menuButtonVisible": false,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": false,
+    "drawer_closed_after_nav": false,
+    "screenshot": "docs/screenshots/viewport_1280.png"
+  },
+  {
+    "viewport": "1024px",
+    "type": "Compact / Tablet Landscape",
+    "width": 1024,
+    "height": 768,
+    "metrics": {
+      "docScrollWidth": 1024,
+      "windowInnerWidth": 1024,
+      "hasHorizontalScroll": false,
+      "headerWidth": 1024,
+      "headerRight": 1024,
+      "headerClipped": false,
+      "navVisible": true,
+      "menuButtonVisible": false,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": false,
+    "drawer_closed_after_nav": false,
+    "screenshot": "docs/screenshots/viewport_1024.png"
+  },
+  {
+    "viewport": "768px",
+    "type": "Tablet Portrait",
+    "width": 768,
+    "height": 1024,
+    "metrics": {
+      "docScrollWidth": 768,
+      "windowInnerWidth": 768,
+      "hasHorizontalScroll": false,
+      "headerWidth": 768,
+      "headerRight": 768,
+      "headerClipped": false,
+      "navVisible": false,
+      "menuButtonVisible": true,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": true,
+    "drawer_closed_after_nav": true,
+    "screenshot": "docs/screenshots/viewport_768.png"
+  },
+  {
+    "viewport": "430px",
+    "type": "Large Mobile (iPhone 15 Pro Max)",
+    "width": 430,
+    "height": 932,
+    "metrics": {
+      "docScrollWidth": 430,
+      "windowInnerWidth": 430,
+      "hasHorizontalScroll": false,
+      "headerWidth": 430,
+      "headerRight": 430,
+      "headerClipped": false,
+      "navVisible": false,
+      "menuButtonVisible": true,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": true,
+    "drawer_closed_after_nav": true,
+    "screenshot": "docs/screenshots/viewport_430.png"
+  },
+  {
+    "viewport": "390px",
+    "type": "Standard Mobile (iPhone 14)",
+    "width": 390,
+    "height": 844,
+    "metrics": {
+      "docScrollWidth": 390,
+      "windowInnerWidth": 390,
+      "hasHorizontalScroll": false,
+      "headerWidth": 390,
+      "headerRight": 390,
+      "headerClipped": false,
+      "navVisible": false,
+      "menuButtonVisible": true,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": true,
+    "drawer_closed_after_nav": true,
+    "screenshot": "docs/screenshots/viewport_390.png"
+  },
+  {
+    "viewport": "360px",
+    "type": "Small Mobile (Galaxy S8)",
+    "width": 360,
+    "height": 740,
+    "metrics": {
+      "docScrollWidth": 360,
+      "windowInnerWidth": 360,
+      "hasHorizontalScroll": false,
+      "headerWidth": 360,
+      "headerRight": 360,
+      "headerClipped": false,
+      "navVisible": false,
+      "menuButtonVisible": true,
+      "profileVisible": true,
+      "searchVisible": true,
+      "adminLinkVisible": true
+    },
+    "drawer_tested": true,
+    "drawer_closed_after_nav": true,
+    "screenshot": "docs/screenshots/viewport_360.png"
+  }
+]

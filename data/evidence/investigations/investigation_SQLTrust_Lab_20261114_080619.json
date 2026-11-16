@@ -1,0 +1,39 @@
+{
+  "completed_at": "2026-11-14T08:06:19.817000",
+  "critical_count": 0,
+  "database_name": "SQLTrust_Lab",
+  "findings": [
+    {
+      "after_state": {
+        "definition_hash": "ENCRYPTED_UNOBSERVABLE",
+        "item_type": "PROCEDURE",
+        "properties": {
+          "columns": [],
+          "create_date": "2026-11-14 13:36:19.663000",
+          "modify_date": "2026-11-14 13:36:19.663000",
+          "type_desc": "SQL_STORED_PROCEDURE"
+        },
+        "raw_definition": null
+      },
+      "before_state": null,
+      "category": "SCHEMA",
+      "confidence_score": 1.0,
+      "entity_name": "ReviewTestProcEncrypted",
+      "explanation": "Newly created procedure 'dbo.ReviewTestProcEncrypted' detected. Did not exist in reference baseline.",
+      "finding_type": "OBJECT_CREATED",
+      "id": "4891e3a4-6365-437f-92bc-acab113ca54a",
+      "schema_name": "dbo",
+      "severity": "HIGH"
+    }
+  ],
+  "findings_count": 1,
+  "high_count": 1,
+  "investigation_id": "e6679bc1-303c-4f1c-bfb1-e45be950478d",
+  "investigation_name": "Test4_Encrypted_Comparison",
+  "ref_baseline_id": "98a00326-210e-460c-8d8a-3236d9d63867",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "+3TEPFMVdZRDvIKKiO1fd52X56+PKSlLEg/wnDZV7qkXt3YT2gqRByfxIIGF7+qEQf/TmroGrB3qs/F4tXH0Dw==",
+  "started_at": "2026-11-14T08:06:19.787000",
+  "summary_notes": null,
+  "target_baseline_id": "d403059c-4fce-4412-95af-12a66f50dd58"
+}

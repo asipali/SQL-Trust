@@ -1,0 +1,126 @@
+{
+  "completed_at": "2026-11-14T08:10:31.940000",
+  "critical_count": 0,
+  "database_name": "SQLTrust_Lab",
+  "findings": [
+    {
+      "after_state": {
+        "definition_hash": "79837876704e3a8811486451cfcd087efb80957e6bae01106560f572ce59c110",
+        "properties": {
+          "columns": [
+            {
+              "column_id": 1,
+              "column_name": "col_id",
+              "is_identity": true,
+              "is_nullable": false,
+              "max_length": 4,
+              "object_id": 1765581328,
+              "precision": 10,
+              "scale": 0,
+              "type_name": "int"
+            },
+            {
+              "column_id": 2,
+              "column_name": "account_num",
+              "is_identity": false,
+              "is_nullable": false,
+              "max_length": 32,
+              "object_id": 1765581328,
+              "precision": 0,
+              "scale": 0,
+              "type_name": "varchar"
+            },
+            {
+              "column_id": 3,
+              "column_name": "balance",
+              "is_identity": false,
+              "is_nullable": true,
+              "max_length": 9,
+              "object_id": 1765581328,
+              "precision": 18,
+              "scale": 2,
+              "type_name": "decimal"
+            },
+            {
+              "column_id": 4,
+              "column_name": "audit_tag",
+              "is_identity": false,
+              "is_nullable": true,
+              "max_length": 100,
+              "object_id": 1765581328,
+              "precision": 0,
+              "scale": 0,
+              "type_name": "nvarchar"
+            }
+          ],
+          "create_date": "2026-11-14 13:40:31.247000",
+          "modify_date": "2026-11-14 13:40:31.850000",
+          "type_desc": "USER_TABLE"
+        },
+        "raw_definition": null
+      },
+      "before_state": {
+        "definition_hash": "68cfed962ad871a291dfb7e08700839653af4be452d8f3331d35c88c54b5e408",
+        "properties": {
+          "columns": [
+            {
+              "column_id": 1,
+              "column_name": "col_id",
+              "is_identity": true,
+              "is_nullable": false,
+              "max_length": 4,
+              "object_id": 1765581328,
+              "precision": 10,
+              "scale": 0,
+              "type_name": "int"
+            },
+            {
+              "column_id": 2,
+              "column_name": "account_num",
+              "is_identity": false,
+              "is_nullable": false,
+              "max_length": 32,
+              "object_id": 1765581328,
+              "precision": 0,
+              "scale": 0,
+              "type_name": "varchar"
+            },
+            {
+              "column_id": 3,
+              "column_name": "balance",
+              "is_identity": false,
+              "is_nullable": true,
+              "max_length": 9,
+              "object_id": 1765581328,
+              "precision": 18,
+              "scale": 2,
+              "type_name": "decimal"
+            }
+          ],
+          "create_date": "2026-11-14 13:40:31.247000",
+          "modify_date": "2026-11-14 13:40:31.247000",
+          "type_desc": "USER_TABLE"
+        },
+        "raw_definition": null
+      },
+      "category": "SCHEMA",
+      "confidence_score": 0.95,
+      "entity_name": "ReviewTestTable",
+      "explanation": "Schema modification detected for table 'dbo.ReviewTestTable'. Column 'audit_tag' (nvarchar) was added.",
+      "finding_type": "OBJECT_MODIFIED",
+      "id": "ecf40cb3-c4e4-4280-bc67-76c18b6947c7",
+      "schema_name": "dbo",
+      "severity": "HIGH"
+    }
+  ],
+  "findings_count": 1,
+  "high_count": 1,
+  "investigation_id": "299e830f-f67b-44cf-9b0f-57fd78d80a77",
+  "investigation_name": "Test2_ColAdd_Comparison",
+  "ref_baseline_id": "e2439f64-949a-454a-8972-661cd09f6bad",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "JQCJkG/znRnA7YNUG/KW0i8B5JrBi4C36nK83SRCyYxRKjQmB/Ci6+f3U7jFFl5UEpFSWhAar5L61FoFo3okCA==",
+  "started_at": "2026-11-14T08:10:31.920000",
+  "summary_notes": null,
+  "target_baseline_id": "5c6c4f29-160c-4116-86c2-c52115ee319d"
+}

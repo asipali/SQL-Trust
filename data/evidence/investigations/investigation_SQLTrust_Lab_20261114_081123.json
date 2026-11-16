@@ -1,0 +1,165 @@
+{
+  "completed_at": "2026-11-14T08:11:23.827000",
+  "critical_count": 1,
+  "database_name": "SQLTrust_Lab",
+  "findings": [
+    {
+      "after_state": {
+        "class_desc": "DATABASE",
+        "column_name": null,
+        "grantee_name": "review_test_user",
+        "object_name": null,
+        "object_schema": null,
+        "permission_name": "CONNECT",
+        "state_desc": "GRANT"
+      },
+      "before_state": null,
+      "category": "PERMISSION",
+      "confidence_score": 0.95,
+      "entity_name": "GRANT CONNECT ON DATABASE TO review_test_user",
+      "explanation": "Explicit permission GRANT CONNECT on DATABASE awarded to 'review_test_user'.",
+      "finding_type": "PERMISSION_GRANTED",
+      "id": "033c6ec6-5c2f-48f3-aa88-1290901405cb",
+      "schema_name": null,
+      "severity": "MEDIUM"
+    },
+    {
+      "after_state": {
+        "member_name": "review_test_user",
+        "role_name": "db_owner"
+      },
+      "before_state": null,
+      "category": "ROLE_MEMBERSHIP",
+      "confidence_score": 1.0,
+      "entity_name": "db_owner -> review_test_user",
+      "explanation": "Privilege escalation: User 'review_test_user' added to high-privilege role 'db_owner'.",
+      "finding_type": "ROLE_ESCALATION",
+      "id": "21bcd252-78e7-4045-abbb-4ce48fdb29c0",
+      "schema_name": null,
+      "severity": "CRITICAL"
+    },
+    {
+      "after_state": {
+        "definition_hash": "68cfed962ad871a291dfb7e08700839653af4be452d8f3331d35c88c54b5e408",
+        "item_type": "TABLE",
+        "properties": {
+          "columns": [
+            {
+              "column_id": 1,
+              "column_name": "col_id",
+              "is_identity": true,
+              "is_nullable": false,
+              "max_length": 4,
+              "object_id": 1893581784,
+              "precision": 10,
+              "scale": 0,
+              "type_name": "int"
+            },
+            {
+              "column_id": 2,
+              "column_name": "account_num",
+              "is_identity": false,
+              "is_nullable": false,
+              "max_length": 32,
+              "object_id": 1893581784,
+              "precision": 0,
+              "scale": 0,
+              "type_name": "varchar"
+            },
+            {
+              "column_id": 3,
+              "column_name": "balance",
+              "is_identity": false,
+              "is_nullable": true,
+              "max_length": 9,
+              "object_id": 1893581784,
+              "precision": 18,
+              "scale": 2,
+              "type_name": "decimal"
+            }
+          ],
+          "create_date": "2026-11-14 13:41:19.553000",
+          "modify_date": "2026-11-14 13:41:19.553000",
+          "type_desc": "USER_TABLE"
+        },
+        "raw_definition": null
+      },
+      "before_state": null,
+      "category": "SCHEMA",
+      "confidence_score": 1.0,
+      "entity_name": "ReviewTestTable",
+      "explanation": "Newly created table 'dbo.ReviewTestTable' detected. Did not exist in reference baseline.",
+      "finding_type": "OBJECT_CREATED",
+      "id": "4d694091-12fe-4ad4-9500-09d36ee9d979",
+      "schema_name": "dbo",
+      "severity": "MEDIUM"
+    },
+    {
+      "after_state": {
+        "is_auto_close_on": true
+      },
+      "before_state": {
+        "is_auto_close_on": false
+      },
+      "category": "CONFIGURATION",
+      "confidence_score": 1.0,
+      "entity_name": "OPTION::IS_AUTO_CLOSE_ON",
+      "explanation": "AUTO_CLOSE toggled. Enabling AUTO_CLOSE clears cache and can facilitate timeline tampering. (Baseline value: 'False', Current value: 'True').",
+      "finding_type": "CONFIG_DRIFT",
+      "id": "51a1f0cb-f020-47c4-aa29-62a77583c34b",
+      "schema_name": null,
+      "severity": "HIGH"
+    },
+    {
+      "after_state": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2026-11-14 13:41:19.557000",
+        "default_schema_name": "dbo",
+        "modify_date": "2026-11-14 13:41:19.557000",
+        "principal_id": 5,
+        "principal_name": "review_test_user",
+        "sid_hex": "0x010500000000000903000000B1C868CE3AB2EB4388F881F8921F5625",
+        "type_desc": "SQL_USER"
+      },
+      "before_state": null,
+      "category": "PRINCIPAL",
+      "confidence_score": 1.0,
+      "entity_name": "review_test_user",
+      "explanation": "New database principal 'review_test_user' was created. Requires authorization review.",
+      "finding_type": "USER_ADDED",
+      "id": "7dd55c3a-81fc-42ab-a19e-82501f5198e0",
+      "schema_name": null,
+      "severity": "HIGH"
+    },
+    {
+      "after_state": {
+        "class_desc": "OBJECT_OR_COLUMN",
+        "column_name": null,
+        "grantee_name": "review_test_user",
+        "object_name": "ReviewTestTable",
+        "object_schema": "dbo",
+        "permission_name": "SELECT",
+        "state_desc": "GRANT"
+      },
+      "before_state": null,
+      "category": "PERMISSION",
+      "confidence_score": 0.95,
+      "entity_name": "GRANT SELECT ON ReviewTestTable TO review_test_user",
+      "explanation": "Explicit permission GRANT SELECT on ReviewTestTable awarded to 'review_test_user'.",
+      "finding_type": "PERMISSION_GRANTED",
+      "id": "b5621a84-75a4-4c1b-8407-76ab83d87944",
+      "schema_name": "dbo",
+      "severity": "MEDIUM"
+    }
+  ],
+  "findings_count": 6,
+  "high_count": 2,
+  "investigation_id": "84e64c46-4f37-43f2-ac84-7b039e4f892f",
+  "investigation_name": "Test10_Repeated_Session",
+  "ref_baseline_id": "ec519728-71e8-4803-af71-077a608575c4",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "J0ZW2CmJS9chQFGyq/klqqPQJoOQywLYKunt0Twy/zijQlZn6v/XRiPSTCMmyVEsO4ruei/FCSAFjBdo1gtdCw==",
+  "started_at": "2026-11-14T08:11:23.793000",
+  "summary_notes": null,
+  "target_baseline_id": "72c25d53-40e1-4e74-ab5a-0a1f4e0668c5"
+}

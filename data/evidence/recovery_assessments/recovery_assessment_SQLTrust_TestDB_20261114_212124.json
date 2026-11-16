@@ -1,0 +1,62 @@
+{
+  "assessed_at": "2026-11-14T21:21:24.063000",
+  "assessment_id": "1f8369aa-d844-4449-836f-4e305b232290",
+  "assessment_name": "Test_Assessment_SQLTrust_TestDB",
+  "chain_segment_count": 2,
+  "chain_validation_status": "MISSING_LOGS",
+  "checkpoint_lsn": "45000000272800001",
+  "confidence_rationale": "MEDIUM CONFIDENCE (Score: 60.0/100): Validated recovery candidate with residual uncertainties or minor anomalies (1 uncertainty factors).",
+  "database_name": "SQLTrust_TestDB",
+  "first_lsn": "45000000206400001",
+  "has_sufficient_evidence": true,
+  "last_lsn": "45000000278400001",
+  "missing_telemetry": [],
+  "model_version": "1.0.0",
+  "negative_indicators": [],
+  "positive_indicators": [
+    {
+      "description": "Backup payload verified with SHA-256 (5ac03efd35c15ebf...) and RESTORE VERIFYONLY CHECKSUM.",
+      "evidence_source": "MODULE_1_BACKUP",
+      "impact_direction": "POSITIVE",
+      "metadata": {
+        "sha256": "5ac03efd35c15ebf4cf079ac9f41e8229bb5f9b31c88048eaad07758f4687470"
+      },
+      "relationship_type": "CONFIRMED",
+      "source_record_id": "2774dc1c-5aa4-42bb-8581-be58102693bd",
+      "time_delta_seconds": 0,
+      "weight_applied": 20.0
+    },
+    {
+      "description": "Immutable S3 Object Lock active in COMPLIANCE mode until 2026-12-14 21:21:15.",
+      "evidence_source": "MODULE_1_BACKUP",
+      "impact_direction": "POSITIVE",
+      "metadata": {
+        "mode": "COMPLIANCE",
+        "version_id": "6717f9cb35fbceb2aa33acf74707a690"
+      },
+      "relationship_type": "CONFIRMED",
+      "source_record_id": "2774dc1c-5aa4-42bb-8581-be58102693bd",
+      "time_delta_seconds": 0,
+      "weight_applied": 15.0
+    }
+  ],
+  "recovery_point_id": "fc30216e-a250-4010-8220-138dc90da616",
+  "recovery_point_time": "2026-11-14T21:21:15.223000",
+  "recovery_point_type": "LOG",
+  "server_name": "ASIP_5CD5347GKM\\SQLEXPRESS",
+  "signature": "zs+Cx4fPDoq64IQMNMsps0Gi4BRdVz/xer4hXi+Q8A+fQkPsfTuBbYuuY1MdtHyQ+tpterFVvjFUvDxgF0OqCA==",
+  "trust_classification": "MEDIUM_CONFIDENCE",
+  "trust_score": 60.0,
+  "uncertainty_factors": [
+    {
+      "description": "No Module 3 forensic baseline snapshot available prior to recovery point. Schema state unverified.",
+      "evidence_source": "MODULE_3_BASELINE",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {},
+      "relationship_type": "UNKNOWN",
+      "source_record_id": "NONE",
+      "time_delta_seconds": 0,
+      "weight_applied": -15.0
+    }
+  ]
+}

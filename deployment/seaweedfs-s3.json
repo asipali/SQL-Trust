@@ -1,0 +1,47 @@
+{
+  "identities": [
+    {
+      "name": "sqltrust-admin",
+      "credentials": [
+        {
+          "accessKey": "sqltrust_admin",
+          "secretKey": "sqltrust_secret_key"
+        }
+      ],
+      "actions": [
+        "Admin",
+        "Read",
+        "Write",
+        "List",
+        "Tagging"
+      ]
+    },
+    {
+      "name": "sqltrust-backup-writer",
+      "credentials": [
+        {
+          "accessKey": "sqltrust_backup_writer",
+          "secretKey": "sqltrust_writer_secret_key"
+        }
+      ],
+      "actions": [
+        "Read",
+        "Write",
+        "List"
+      ]
+    },
+    {
+      "name": "sqltrust-recovery-reader",
+      "credentials": [
+        {
+          "accessKey": "sqltrust_recovery_reader",
+          "secretKey": "sqltrust_reader_secret_key"
+        }
+      ],
+      "actions": [
+        "Read",
+        "List"
+      ]
+    }
+  ]
+}

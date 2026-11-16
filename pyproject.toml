@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sql-trust"
+version = "0.1.0"
+description = "SQL-TRUST — SQL Server Cyber Recovery & Forensic Intelligence Platform"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.5.0",
+    "sqlalchemy>=2.0.35",
+    "pyodbc>=5.1.0",
+    "boto3>=1.35.0",
+    "cryptography>=43.0.0"
+]
+
+[tool.pyright]
+include = ["backend", "tests", "scripts"]
+venvPath = "."
+venv = ".venv"
+pythonVersion = "3.12"
+extraPaths = [".", ".."]
+
+[tool.pyrefly]
+python-version = "3.12"
+search-path = [
+    ".",
+    "backend",
+    "backend/api",
+    "backend/api/v1",
+    "backend/services",
+    "backend/services/investigation"
+]
+site-package-path = [".venv/Lib/site-packages"]
+ignore-missing-imports = [
+    "backend.services.investigation.*",
+    "backend.api.v1.workflows",
+    "backend.api.v1.*"
+]
+
+[tool.pyrefly.errors]
+missing-import = "ignore"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

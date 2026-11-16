@@ -1,0 +1,49 @@
+{
+  "assessed_at": "2026-11-14T13:39:55.600000",
+  "assessment_id": "007822fa-87d5-465a-8bb0-8d5f9490886d",
+  "assessment_name": "Clean_PreIncident_Evaluation",
+  "chain_segment_count": 1,
+  "chain_validation_status": "VALID",
+  "checkpoint_lsn": "30000000015000001",
+  "confidence_rationale": "MEDIUM CONFIDENCE (Score: 75.0/100): Validated recovery candidate with residual uncertainties or minor anomalies (1 uncertainty factors).",
+  "database_name": "SQLTrust_TestDB",
+  "first_lsn": "30000000010000001",
+  "has_sufficient_evidence": true,
+  "last_lsn": "30000000020000001",
+  "missing_telemetry": [],
+  "model_version": "1.0.0",
+  "negative_indicators": [],
+  "positive_indicators": [
+    {
+      "description": "Backup payload verified with SHA-256 (1122334455667788...) and RESTORE VERIFYONLY CHECKSUM.",
+      "evidence_source": "MODULE_1_BACKUP",
+      "impact_direction": "POSITIVE",
+      "metadata": {
+        "sha256": "11223344556677889900aabbccddeeff11223344556677889900aabbccddeeff"
+      },
+      "relationship_type": "CONFIRMED",
+      "source_record_id": "e4944fc9-0fc7-4f8d-b4a6-eaae700cb8eb",
+      "time_delta_seconds": 0,
+      "weight_applied": 20.0
+    }
+  ],
+  "recovery_point_id": "e4944fc9-0fc7-4f8d-b4a6-eaae700cb8eb",
+  "recovery_point_time": "2026-11-14T00:00:00",
+  "recovery_point_type": "FULL",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "yW+qxLU174I948TdNlM/EESL6rIJ0MOgwu3j0d2dTQuofR2pdAwOiRuedkdC/uMRLrpZM1A1qk3fkeYGUdlHBg==",
+  "trust_classification": "MEDIUM_CONFIDENCE",
+  "trust_score": 75.0,
+  "uncertainty_factors": [
+    {
+      "description": "No Module 3 forensic baseline snapshot available prior to recovery point. Schema state unverified.",
+      "evidence_source": "MODULE_3_BASELINE",
+      "impact_direction": "UNCERTAINTY",
+      "metadata": {},
+      "relationship_type": "UNKNOWN",
+      "source_record_id": "NONE",
+      "time_delta_seconds": 0,
+      "weight_applied": -15.0
+    }
+  ]
+}

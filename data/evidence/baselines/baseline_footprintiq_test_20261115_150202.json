@@ -1,0 +1,3140 @@
+{
+  "baseline_id": "0b8297da-1f01-48fe-8bf8-418e9ab82e7a",
+  "baseline_name": "Baseline_footprintiq_test_20261115_150202",
+  "captured_at": "2026-11-15T15:02:02.623000",
+  "database_name": "footprintiq_test",
+  "items": [
+    {
+      "definition_hash": "cce8442a3387fcd5133fdcd6648b77d41eb8f84b1ac275835e551b8a673a41fd",
+      "is_encrypted": false,
+      "item_name": "vuln_scan_jobs",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "requested_by",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "target",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "profile_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "scan_config_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "gvm_target_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "gvm_task_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "gvm_report_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 11,
+            "column_name": "progress",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 2069582411,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 12,
+            "column_name": "started_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 2069582411,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 13,
+            "column_name": "completed_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 2069582411,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 14,
+            "column_name": "duration_seconds",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 8,
+            "object_id": 2069582411,
+            "precision": 53,
+            "scale": 0,
+            "type_name": "float"
+          },
+          {
+            "column_id": 15,
+            "column_name": "evidence_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 16,
+            "column_name": "error_category",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 17,
+            "column_name": "error_message",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 18,
+            "column_name": "cancellation_reason",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 2069582411,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.080000",
+        "modify_date": "2026-11-06 19:42:39.113000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "a5947e73b483145331ff4bed7e0ad532689a7c3ae513760b279c78ae0d3d491b",
+      "is_encrypted": false,
+      "item_name": "db_owner",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.333000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16384,
+        "principal_name": "db_owner",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000000400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "cf2a573c6b359b972f66929174fb6a6e71e62fcf2f31c9caed0f21f1103db7d9",
+      "is_encrypted": false,
+      "item_name": "entities",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1749581271,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1749581271,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "entity_type",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1749581271,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "canonical_value",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 512,
+            "object_id": 1749581271,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "original_value",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1749581271,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "first_seen",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1749581271,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 7,
+            "column_name": "last_seen",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1749581271,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 8,
+            "column_name": "evidence_ids",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1749581271,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "metadata_json",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1749581271,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.027000",
+        "modify_date": "2026-11-06 19:42:39.040000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "505cc19af37532d16b7df2b18aa1a4a6c86687d164d33410372e6ebad74a9990",
+      "is_encrypted": false,
+      "item_name": "exposure_scores",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "formula_version",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "formula_weights",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "raw_factor_inputs",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "normalized_factor_scores",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "weighted_contributions",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "total_score",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 466100701,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 9,
+            "column_name": "renormalized_score",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 8,
+            "object_id": 466100701,
+            "precision": 53,
+            "scale": 0,
+            "type_name": "float"
+          },
+          {
+            "column_id": 10,
+            "column_name": "risk_tier",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 11,
+            "column_name": "assessment_status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 12,
+            "column_name": "coverage_percentage",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 466100701,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 13,
+            "column_name": "is_fully_assessed",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 1,
+            "object_id": 466100701,
+            "precision": 1,
+            "scale": 0,
+            "type_name": "bit"
+          },
+          {
+            "column_id": 14,
+            "column_name": "coverage_metadata",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 15,
+            "column_name": "scanner_availability",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 16,
+            "column_name": "source_observation_ids",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 17,
+            "column_name": "reviewer_notes",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 18,
+            "column_name": "explanation",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 466100701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 19,
+            "column_name": "is_active",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 1,
+            "object_id": 466100701,
+            "precision": 1,
+            "scale": 0,
+            "type_name": "bit"
+          },
+          {
+            "column_id": 20,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 466100701,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 21,
+            "column_name": "updated_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 466100701,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.217000",
+        "modify_date": "2026-11-06 19:42:39.227000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "cd5cdcfc11906a0b2bace6694f55a583f4c0797790ffe276e54db52eb6590449",
+      "is_encrypted": false,
+      "item_name": "db_accessadmin",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.333000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16385,
+        "principal_name": "db_accessadmin",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000001400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "0074ae1bf493612e2446f6cbe41bfa4276ee8d15dc1ab4fbbe1aa2fc0abb8237",
+      "is_encrypted": false,
+      "item_name": "audit_logs",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1477580302,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "event_type",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1477580302,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "actor_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1477580302,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "target_user_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1477580302,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "outcome",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 16,
+            "object_id": 1477580302,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "request_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1477580302,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "ip_address",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1477580302,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "details",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1477580302,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "timestamp",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1477580302,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:38.977000",
+        "modify_date": "2026-11-06 19:42:38.993000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "2328b236277838681ea709de6e2370ec20db64d71a96d9d834391882dcd60e2b",
+      "is_encrypted": false,
+      "item_name": "target_authorizations",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1525580473,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1525580473,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "target",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 1525580473,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "target_type",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1525580473,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "allowed_operations",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1525580473,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "authorization_reference",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 128,
+            "object_id": 1525580473,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "approved_by",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1525580473,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "valid_from",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1525580473,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 9,
+            "column_name": "valid_to",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1525580473,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 10,
+            "column_name": "is_revoked",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 1,
+            "object_id": 1525580473,
+            "precision": 1,
+            "scale": 0,
+            "type_name": "bit"
+          },
+          {
+            "column_id": 11,
+            "column_name": "notes",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 1525580473,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 12,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1525580473,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:38.997000",
+        "modify_date": "2026-11-06 19:42:39.010000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "15456be2a47f9d581f6d13f58386dbff55b863e6e8e94c899e54bb2e6f13f76b",
+      "is_encrypted": false,
+      "item_name": "evidence",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "job_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "source_type",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "source_name",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 128,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "target",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "collection_status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "raw_content_path",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 512,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "content_hash",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "content_size_bytes",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 1653580929,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 11,
+            "column_name": "source_metadata",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 12,
+            "column_name": "collected_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1653580929,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 13,
+            "column_name": "storage_backend",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1653580929,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.013000",
+        "modify_date": "2026-11-06 19:42:39.187000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "9bd506caeecca9ac832b05fb8b266919f07d20ac3d62ff6c067156fa607d53fd",
+      "is_encrypted": false,
+      "item_name": "vuln_findings",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "job_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "host",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "port",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 18099105,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 6,
+            "column_name": "protocol",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 16,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "name",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "description",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "solution",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "severity",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 11,
+            "column_name": "raw_severity",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 32,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 12,
+            "column_name": "cvss_score",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 8,
+            "object_id": 18099105,
+            "precision": 53,
+            "scale": 0,
+            "type_name": "float"
+          },
+          {
+            "column_id": 13,
+            "column_name": "cvss_version",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 16,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 14,
+            "column_name": "cve_references",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 15,
+            "column_name": "nvt_oid",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 128,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 16,
+            "column_name": "qod",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 18099105,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 17,
+            "column_name": "source_finding_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 128,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 18,
+            "column_name": "evidence_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 18099105,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 19,
+            "column_name": "first_seen",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 18099105,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 20,
+            "column_name": "last_seen",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 18099105,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.100000",
+        "modify_date": "2026-11-06 19:42:39.133000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "73222d1ac66b04ad3f344bf65535edcf02633c2d81285655043479bfe2123415",
+      "is_encrypted": false,
+      "item_name": "db_owner::dbo",
+      "item_type": "ROLE_MEMBER",
+      "properties": {
+        "member_name": "dbo",
+        "role_name": "db_owner"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "fb5c021a9d84c8b43dbccf5664b4e0bab42dc1f17bd04892eaddecb53f6bb2dc",
+      "is_encrypted": false,
+      "item_name": "db_datawriter",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.363000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16391,
+        "principal_name": "db_datawriter",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000007400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "d36fd1694254d452787925610a8c4cb47bb4750ebd604f9a96c92b69bd8ddcb5",
+      "is_encrypted": false,
+      "item_name": "users",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "username",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "email",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 128,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "password_hash",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "role",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "is_active",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 1,
+            "object_id": 1301579675,
+            "precision": 1,
+            "scale": 0,
+            "type_name": "bit"
+          },
+          {
+            "column_id": 7,
+            "column_name": "failed_login_attempts",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 1301579675,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 8,
+            "column_name": "locked_until",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 1301579675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 9,
+            "column_name": "last_login_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 1301579675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 10,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1301579675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 11,
+            "column_name": "updated_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1301579675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 12,
+            "column_name": "full_name",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 128,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 13,
+            "column_name": "account_status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 16,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 14,
+            "column_name": "approved_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 1301579675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 15,
+            "column_name": "approved_by_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 16,
+            "column_name": "rejected_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 1301579675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 17,
+            "column_name": "rejected_by_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1301579675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 18,
+            "column_name": "password_changed_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 1301579675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:38.950000",
+        "modify_date": "2026-11-06 19:42:39.157000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "75529040fa29044de0fb4836777c07787732bddb5e580c1a0cfe85396cdba077",
+      "is_encrypted": false,
+      "item_name": "db_datareader",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.363000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16390,
+        "principal_name": "db_datareader",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000006400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "133b53f130c9718d7233910fa043e876aa3aa7cd061857e27e6107ca63592c67",
+      "is_encrypted": false,
+      "item_name": "alembic_version",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "version_num",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1205579333,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:38.903000",
+        "modify_date": "2026-11-06 19:42:38.903000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "8f7639f3f6cdc1a2f62bbf701cf72f44e84e6391a20e0e5790bc9c2b82d00b79",
+      "is_encrypted": false,
+      "item_name": "collection_jobs",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1589580701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1589580701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "target",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 1589580701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "collector_name",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1589580701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1589580701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "started_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1589580701,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 7,
+            "column_name": "completed_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 1589580701,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 8,
+            "column_name": "result_summary",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1589580701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "error_category",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1589580701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "error_message",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 1589580701,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.003000",
+        "modify_date": "2026-11-06 19:42:39.023000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "11ec8b5711a1cc3fe010fcaff6b6b9a5919d935bbea9082c846683cee9b9a056",
+      "is_encrypted": false,
+      "item_name": "user_sessions",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1413580074,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "user_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1413580074,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "is_revoked",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 1,
+            "object_id": 1413580074,
+            "precision": 1,
+            "scale": 0,
+            "type_name": "bit"
+          },
+          {
+            "column_id": 4,
+            "column_name": "expires_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1413580074,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 5,
+            "column_name": "last_accessed_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1413580074,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 6,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1413580074,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 7,
+            "column_name": "ip_address",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1413580074,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "user_agent",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 255,
+            "object_id": 1413580074,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:38.963000",
+        "modify_date": "2026-11-06 19:42:38.980000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "757cbd20588f2042c43942845b22fd10c3f370eb105f2915d812041c7f24acbc",
+      "is_encrypted": false,
+      "item_name": "scan_ports",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "host_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "job_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "protocol",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 16,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "port_number",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 1989582126,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 6,
+            "column_name": "state",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "service_name",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "product",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 128,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "version",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "extra_info",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 255,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 11,
+            "column_name": "cpe",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 255,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 12,
+            "column_name": "method",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 32,
+            "object_id": 1989582126,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 13,
+            "column_name": "confidence",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 1989582126,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 14,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1989582126,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.067000",
+        "modify_date": "2026-11-06 19:42:39.087000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "246330df8df95716d0d0b9f55b9326fb641808c01dcb801db05eebdd2868f2c1",
+      "is_encrypted": false,
+      "item_name": "db_ddladmin",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.350000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16387,
+        "principal_name": "db_ddladmin",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000003400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "bcb35e1f208da4b6b92a7b23fcd6a011d0cdde55c57d011edd31c386f5a7e3a4",
+      "is_encrypted": false,
+      "item_name": "scan_hosts",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "job_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "address",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "address_type",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 16,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "hostname",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 255,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "os_match",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 255,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "evidence_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1893581784,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1893581784,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.053000",
+        "modify_date": "2026-11-06 19:42:39.077000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "10a1a8888f4cdbc857fa210c7897ec4f175cb9957f01a0c1dde9d69d45a984e2",
+      "is_encrypted": false,
+      "item_name": "active_scan_jobs",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "requested_by",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "target",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "resolved_ips",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "scan_profile",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "scan_profile_version",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "started_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1797581442,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 10,
+            "column_name": "completed_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 1797581442,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 11,
+            "column_name": "duration_seconds",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 8,
+            "object_id": 1797581442,
+            "precision": 53,
+            "scale": 0,
+            "type_name": "float"
+          },
+          {
+            "column_id": 12,
+            "column_name": "exit_code",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 1797581442,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 13,
+            "column_name": "evidence_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 14,
+            "column_name": "error_category",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 15,
+            "column_name": "error_message",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 16,
+            "column_name": "cancellation_reason",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 17,
+            "column_name": "command_summary",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 255,
+            "object_id": 1797581442,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.040000",
+        "modify_date": "2026-11-06 19:42:39.070000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "8813c43181f6a29078c4f7eee742037edec5ee3789aa74316f2038616e22ebe1",
+      "is_encrypted": false,
+      "item_name": "db_backupoperator",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.350000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16389,
+        "principal_name": "db_backupoperator",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000005400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "63642c194b173555f1b682effbdb6fc64f7cc332f23ae01c6073423d6b230d49",
+      "is_encrypted": false,
+      "item_name": "db_denydatareader",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.380000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16392,
+        "principal_name": "db_denydatareader",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000008400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "16f74e524f7d68d3221e4dc09ba78d240bfe892a5d61610671c29da900dae3c2",
+      "is_encrypted": false,
+      "item_name": "DATABASE_CONFIGURATION",
+      "item_type": "DATABASE_OPTION",
+      "properties": {
+        "collation_name": "Latin1_General_CI_AI",
+        "compatibility_level": 160,
+        "create_date": "2026-11-06 19:42:22.810000",
+        "database_id": 8,
+        "is_auto_close_on": true,
+        "is_auto_shrink_on": false,
+        "is_encrypted": false,
+        "is_read_only": false,
+        "is_trustworthy_on": false,
+        "name": "footprintiq_test",
+        "page_verify_option_desc": "CHECKSUM",
+        "recovery_model_desc": "SIMPLE",
+        "state_desc": "ONLINE",
+        "user_access_desc": "MULTI_USER"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "f6e264288a2829c4a644d106cdb896eb08885cb1f67506048a459020f172af21",
+      "is_encrypted": false,
+      "item_name": "db_securityadmin",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.350000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16386,
+        "principal_name": "db_securityadmin",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000002400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "8a1c7350cc326606e3dd8d399a8d8e23cbfc82f54418c17c406f6a31620910e3",
+      "is_encrypted": false,
+      "item_name": "correlation_records",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "correlation_rule_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "rule_version",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "relationship_type",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "confidence_score",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 8,
+            "object_id": 338100245,
+            "precision": 53,
+            "scale": 0,
+            "type_name": "float"
+          },
+          {
+            "column_id": 7,
+            "column_name": "asset_identifier",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "asset_type",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "source_modules",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "source_scanners",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 11,
+            "column_name": "source_observation_ids",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 12,
+            "column_name": "matching_attributes",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 13,
+            "column_name": "related_vulnerability_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 14,
+            "column_name": "evidence_references",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 15,
+            "column_name": "evidence_verification_status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 16,
+            "column_name": "lifecycle_status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 17,
+            "column_name": "correlation_status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 18,
+            "column_name": "summary",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 1024,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 19,
+            "column_name": "details_json",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 338100245,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 20,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 338100245,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 21,
+            "column_name": "updated_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 338100245,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.197000",
+        "modify_date": "2026-11-06 19:42:39.227000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "69ba122b66fb6f1d97d6a70983f2f7787419dd2dfecdf79ce43c67c2f7bd1ea8",
+      "is_encrypted": false,
+      "item_name": "db_denydatawriter",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.380000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16393,
+        "principal_name": "db_denydatawriter",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000009400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "db828c5bc343beb76a9def2f18733225c2bad9d4d24011817f84e60fd9f7a437",
+      "is_encrypted": false,
+      "item_name": "jobs",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "investigation_id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "job_type",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "operation",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "target",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 255,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "parameters",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "progress",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 178099675,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 9,
+            "column_name": "requested_by",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "worker_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 11,
+            "column_name": "process_pid",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 178099675,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 12,
+            "column_name": "lease_expires_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 178099675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 13,
+            "column_name": "heartbeat_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 178099675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 14,
+            "column_name": "retry_count",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 178099675,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 15,
+            "column_name": "max_retries",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 178099675,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 16,
+            "column_name": "error_category",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 17,
+            "column_name": "error_message",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 18,
+            "column_name": "cancellation_requested",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 1,
+            "object_id": 178099675,
+            "precision": 1,
+            "scale": 0,
+            "type_name": "bit"
+          },
+          {
+            "column_id": 19,
+            "column_name": "cancellation_reason",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": -1,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 20,
+            "column_name": "evidence_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 178099675,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 21,
+            "column_name": "duration_seconds",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 8,
+            "object_id": 178099675,
+            "precision": 53,
+            "scale": 0,
+            "type_name": "float"
+          },
+          {
+            "column_id": 22,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 178099675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 23,
+            "column_name": "started_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 178099675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 24,
+            "column_name": "completed_at",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 178099675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 25,
+            "column_name": "updated_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 178099675,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:39.167000",
+        "modify_date": "2026-11-06 19:42:39.197000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "925b78a1651a1582cbd4656ddbb61243fb0be0a3b40fbed86b70ddc721f126f4",
+      "is_encrypted": false,
+      "item_name": "investigations",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "id",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 64,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 2,
+            "column_name": "name",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 128,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "organization_name",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 128,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "description",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "lead_investigator",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 128,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 6,
+            "column_name": "team_members",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 7,
+            "column_name": "status",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 32,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 8,
+            "column_name": "owned_domains",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 9,
+            "column_name": "approved_ips",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 10,
+            "column_name": "approved_cidrs",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 11,
+            "column_name": "active_targets",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": -1,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "nvarchar"
+          },
+          {
+            "column_id": 12,
+            "column_name": "active_scanning_enabled",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 1,
+            "object_id": 1237579447,
+            "precision": 1,
+            "scale": 0,
+            "type_name": "bit"
+          },
+          {
+            "column_id": 13,
+            "column_name": "authorization_reference",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 128,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 14,
+            "column_name": "authorization_expiry",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 10,
+            "object_id": 1237579447,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 15,
+            "column_name": "created_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1237579447,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 16,
+            "column_name": "updated_at",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 10,
+            "object_id": 1237579447,
+            "precision": 34,
+            "scale": 7,
+            "type_name": "datetimeoffset"
+          },
+          {
+            "column_id": 17,
+            "column_name": "owner_user_id",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 64,
+            "object_id": 1237579447,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          }
+        ],
+        "create_date": "2026-11-06 19:42:38.930000",
+        "modify_date": "2026-11-06 19:42:39.220000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    }
+  ],
+  "server_name": "localhost\\SQLEXPRESS",
+  "sha256_manifest": "0678357305811dc4f1f78425e26f7029c709cddc05f0da42986d31b08b080e3a",
+  "signature": "KCC5qBYtcV/RnXwdzO+ZEEtAFcpiRM6YfTQBOsxfkVh2Avx73IoqHisCcfZ25PL/qwLA1iebN+dVFoUKCGJlBA==",
+  "total_objects": 17,
+  "total_permissions": 0,
+  "total_principals": 9
+}

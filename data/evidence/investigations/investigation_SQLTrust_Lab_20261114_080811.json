@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-11-14T08:08:11.960000",
+  "critical_count": 0,
+  "database_name": "SQLTrust_Lab",
+  "findings": [],
+  "findings_count": 0,
+  "high_count": 0,
+  "investigation_id": "c9a41a9e-055f-425b-9a05-d8962a9fa34b",
+  "investigation_name": "Test3_Ephemeral_Comparison",
+  "ref_baseline_id": "afd0b30d-28c8-43fd-b085-a3c93679d297",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "qZ9f8s6RMF1M9SKH7a5fNF9DgiSrzP/75Q3Zl1t2StKl2a+3iXtI93BmeoiJamrv4XzbucBn0cLucboMXSH9CA==",
+  "started_at": "2026-11-14T08:08:11.943000",
+  "summary_notes": null,
+  "target_baseline_id": "51d017cd-9112-48b2-b026-46121b020b6a"
+}
