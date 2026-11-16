@@ -1,4 +1,4 @@
-# SQL-TRUST — Cyber Recovery & Forensic Intelligence Platform
+# SQL-TRUST — Cyber Recovery & Forensic Intelligence Platform 
 
 **Tagline:** Protect · Detect · Investigate · Recover  
 SQL-TRUST is an enterprise-grade SQL Server Cyber Recovery and Forensic Intelligence Platform engineered for enterprise resilience, immutable backup storage, continuous security monitoring, post-incident database forensics, isolated sandbox restoration, and collaborative incident response orchestration.
