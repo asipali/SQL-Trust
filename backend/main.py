@@ -15,7 +15,10 @@ from backend.api.v1 import api_v1_router
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan context: initialize database tables on startup."""
-    init_db()
+    try:
+        init_db()
+    except Exception as e:
+        print(f"[SQL-TRUST] Database initialization pending (SQL Server not yet connected): {e}")
     yield
 
 

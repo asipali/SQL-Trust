@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-11-17T04:56:48.477000",
+  "critical_count": 0,
+  "database_name": "SQLTrust_DemoEnterprise_ERP",
+  "findings": [],
+  "findings_count": 0,
+  "high_count": 0,
+  "investigation_id": "9151333e-4644-4d08-920b-8efa82be0c60",
+  "investigation_name": "Investigation_SQLTrust_DemoEnterprise_ERP_20261117_045648",
+  "ref_baseline_id": "458b6b60-dc11-49b1-aade-00bedc20ffc8",
+  "server_name": "localhost\\SQLEXPRESS",
+  "signature": "kXFPEqu2VAj1syqqch/Y6QtNzlv4bhpJ5IMDzh2ijCKH6qoGSJgsC7k+IxxgOJkqMMsYIqxtRt3dppd8fptCBg==",
+  "started_at": "2026-11-17T04:56:48.450000",
+  "summary_notes": null,
+  "target_baseline_id": "9381b09f-a76e-4469-88da-e0d2e3d6582d"
+}

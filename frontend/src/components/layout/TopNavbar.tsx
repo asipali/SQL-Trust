@@ -46,6 +46,7 @@ export type NavRoute =
 export interface PrimaryNavItem {
   id: string
   label: string
+  shortLabel?: string
   targetRoute: NavRoute
   activeRoutes: NavRoute[]
   icon: typeof Activity
@@ -104,13 +105,15 @@ export function TopNavbar({
     {
       id: 'overview',
       label: 'Overview',
+      shortLabel: 'Overview',
       targetRoute: 'dashboard',
       activeRoutes: ['dashboard'],
       icon: Activity
     },
     {
       id: 'protection',
-      label: 'Protection',
+      label: 'Data Protection',
+      shortLabel: 'Protection',
       targetRoute: 'backups_mgmt',
       activeRoutes: ['backups_mgmt', 'backups_history'],
       icon: Database,
@@ -118,7 +121,8 @@ export function TopNavbar({
     },
     {
       id: 'security',
-      label: 'Security',
+      label: 'Security Operations',
+      shortLabel: 'Security',
       targetRoute: 'sec_overview',
       activeRoutes: ['sec_overview', 'sec_alerts_events', 'sec_audit_activity'],
       icon: ShieldAlert,
@@ -126,14 +130,16 @@ export function TopNavbar({
     },
     {
       id: 'forensics',
-      label: 'Forensics',
+      label: 'Database Forensics',
+      shortLabel: 'Forensics',
       targetRoute: 'forensics_baselines',
       activeRoutes: ['forensics_baselines', 'forensics_timeline', 'evidence_vault'],
       icon: Binary
     },
     {
       id: 'recovery',
-      label: 'Recovery',
+      label: 'Cyber Recovery',
+      shortLabel: 'Recovery',
       targetRoute: 'recovery_intelligence',
       activeRoutes: ['recovery_intelligence', 'restore_validation', 'recovery_history'],
       icon: RotateCcw,
@@ -142,6 +148,7 @@ export function TopNavbar({
     {
       id: 'investigations',
       label: 'Investigations',
+      shortLabel: 'Cases',
       targetRoute: 'investigations',
       activeRoutes: ['investigations', 'response_plans', 'investigation_reports'],
       icon: FileText,
@@ -356,7 +363,7 @@ export function TopNavbar({
           <nav
             role="navigation"
             aria-label="Primary Platform Navigation"
-            className="hidden lg:flex items-center gap-0.5 xl:gap-1 2xl:gap-1.5 min-w-0 shrink"
+            className="hidden lg:flex items-center gap-0.5 xl:gap-1 2xl:gap-1.5 min-w-0 flex-nowrap overflow-x-auto no-scrollbar"
           >
             {authorizedNavItems.map((item) => {
               const isActive = item.activeRoutes.includes(currentRoute)
@@ -366,7 +373,7 @@ export function TopNavbar({
                 <button
                   key={item.id}
                   onClick={() => onNavigate(item.targetRoute)}
-                  className={`relative flex items-center gap-1 px-2 py-1.5 xl:px-2.5 xl:py-2 rounded-lg text-xs font-semibold tracking-wide transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-brand whitespace-nowrap shrink-0 ${
+                  className={`relative flex items-center flex-nowrap gap-1 px-1.5 py-1.5 xl:px-2 xl:py-2 2xl:px-2.5 rounded-lg text-xs font-semibold tracking-wide transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-brand whitespace-nowrap shrink-0 ${
                     isActive
                       ? 'text-brand-600 bg-brand-50/90 font-bold'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/80'
@@ -375,11 +382,12 @@ export function TopNavbar({
                   title={`${item.label} ${item.badge ? ` (${item.badge})` : ''}`}
                 >
                   <item.icon className={`w-3.5 h-3.5 shrink-0 ${isActive ? 'text-brand-600' : 'text-gray-400'}`} />
-                  <span>{item.label}</span>
+                  <span className="hidden 2xl:inline">{item.label}</span>
+                  <span className="inline 2xl:hidden">{item.shortLabel || item.label}</span>
 
                   {badgeFormatted && (
                     <span
-                      className={`ml-0.5 px-1.5 py-0.2 rounded-full text-[10px] font-mono font-bold leading-none shrink-0 ${
+                      className={`ml-0.5 px-1.5 py-0.5 rounded-full text-[10px] font-mono font-bold leading-none shrink-0 inline-flex items-center justify-center ${
                         item.id === 'security'
                           ? 'bg-rose-100 text-rose-700'
                           : item.id === 'investigations'
@@ -403,7 +411,7 @@ export function TopNavbar({
             {isAdmin && (
               <button
                 onClick={() => onNavigate('admin_users')}
-                className={`relative flex items-center gap-1 px-2 py-1.5 xl:px-2.5 xl:py-2 rounded-lg text-xs font-semibold tracking-wide transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-brand whitespace-nowrap shrink-0 ${
+                className={`relative flex items-center flex-nowrap gap-1 px-1.5 py-1.5 xl:px-2 xl:py-2 2xl:px-2.5 rounded-lg text-xs font-semibold tracking-wide transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-brand whitespace-nowrap shrink-0 ${
                   currentRoute === 'admin_users' || currentRoute === 'admin_settings'
                     ? 'text-brand-600 bg-brand-50/90 font-bold'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100/80'
@@ -412,7 +420,8 @@ export function TopNavbar({
                 title="Administration (Security Admin only)"
               >
                 <Settings className={`w-3.5 h-3.5 shrink-0 ${currentRoute === 'admin_users' ? 'text-brand-600' : 'text-gray-400'}`} />
-                <span>Administration</span>
+                <span className="hidden 2xl:inline">Administration</span>
+                <span className="inline 2xl:hidden">Admin</span>
                 {currentRoute === 'admin_users' && (
                   <span className="absolute bottom-0 left-2 right-2 h-0.5 bg-brand-600 rounded-full" />
                 )}
@@ -421,7 +430,7 @@ export function TopNavbar({
           </nav>
 
           {/* 3. RIGHT: Utility Tools & Authentication-Aware Controls */}
-          <div className="flex items-center gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0 min-w-0">
+          <div className="flex items-center gap-1.5 sm:gap-2 xl:gap-2.5 shrink-0 min-w-0 ml-auto">
             {/* Quick Search Trigger */}
             <button
               onClick={() => setSearchOpen(true)}
@@ -429,33 +438,33 @@ export function TopNavbar({
               className="flex items-center gap-1.5 px-2 py-1.5 sm:px-2.5 rounded-lg border border-gray-200 bg-gray-50/80 text-gray-500 hover:text-gray-900 hover:bg-gray-100 transition text-xs shrink-0"
               title="Quick Search (Ctrl+K)"
             >
-              <Search className="w-3.5 h-3.5" />
-              <span className="hidden xl:inline text-xs font-medium text-gray-500">Quick search...</span>
+              <Search className="w-3.5 h-3.5 shrink-0" />
+              <span className="hidden 2xl:inline text-xs font-medium text-gray-500">Quick search...</span>
               <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-white border border-gray-200 text-[10px] font-mono text-gray-400 font-medium shrink-0">
                 ⌘K
               </kbd>
             </button>
 
             {/* System Status Indicators (Compact pills) */}
-            <div className="hidden xl:flex items-center gap-1.5 px-2 py-1 rounded-lg bg-gray-50 border border-gray-200 text-[11px] font-medium text-gray-600 shrink-0">
+            <div className="hidden lg:flex items-center gap-1.5 px-2 py-1 rounded-lg bg-gray-50 border border-gray-200 text-[11px] font-medium text-gray-600 shrink-0">
               <span className="flex items-center gap-1" title={sqlServerConnected ? "SQL Server Instance: Online" : "SQL Server Instance: Offline"}>
-                <Server className="w-3 h-3 text-gray-400" />
+                <Server className="w-3 h-3 text-gray-400 shrink-0" />
                 <span
-                  className={`w-1.5 h-1.5 rounded-full ${
+                  className={`w-1.5 h-1.5 rounded-full shrink-0 ${
                     sqlServerConnected ? 'bg-emerald-500 ring-2 ring-emerald-500/20' : 'bg-rose-500 ring-2 ring-rose-500/20'
                   }`}
                 />
-                <span className="text-[10px] text-gray-500 font-mono">SQL</span>
+                <span className="text-[10px] text-gray-500 font-mono hidden xl:inline">SQL</span>
               </span>
-              <span className="text-gray-300">|</span>
+              <span className="text-gray-300 hidden xl:inline">|</span>
               <span className="flex items-center gap-1" title={wormVaultConnected ? "SeaweedFS WORM Vault: Protected" : "SeaweedFS WORM Vault: Offline"}>
-                <Lock className="w-3 h-3 text-gray-400" />
+                <Lock className="w-3 h-3 text-gray-400 shrink-0" />
                 <span
-                  className={`w-1.5 h-1.5 rounded-full ${
+                  className={`w-1.5 h-1.5 rounded-full shrink-0 ${
                     wormVaultConnected ? 'bg-emerald-500 ring-2 ring-emerald-500/20' : 'bg-rose-500 ring-2 ring-rose-500/20'
                   }`}
                 />
-                <span className="text-[10px] text-gray-500 font-mono">WORM</span>
+                <span className="text-[10px] text-gray-500 font-mono hidden xl:inline">WORM</span>
               </span>
             </div>
 
@@ -593,18 +602,18 @@ export function TopNavbar({
                   onClick={() => setAccountMenuOpen(!accountMenuOpen)}
                   aria-label="User Account Menu"
                   aria-expanded={accountMenuOpen}
-                  className="flex items-center gap-1.5 p-1 pl-1.5 sm:pl-2 pr-1 rounded-lg hover:bg-gray-100 transition border border-gray-200/80 bg-white"
+                  className="flex items-center gap-1.5 p-1 pl-1.5 sm:pl-2 pr-1 rounded-lg hover:bg-gray-100 transition border border-gray-200/80 bg-white shrink-0"
                 >
-                  <div className="text-left hidden md:block min-w-0">
+                  <div className="text-left hidden 2xl:block min-w-0">
                     <div
-                      className="text-xs font-semibold text-gray-900 truncate max-w-[70px] xl:max-w-[105px]"
+                      className="text-xs font-semibold text-gray-900 truncate max-w-[105px]"
                       title={currentSession.full_name || currentSession.username}
                     >
                       {currentSession.full_name || currentSession.username}
                     </div>
                     <div className="flex items-center gap-1">
                       <span
-                        className={`hidden xl:inline-block text-[9px] font-mono px-1 py-0.2 rounded border font-semibold tracking-wider ${getRoleBadgeStyle(
+                        className={`text-[9px] font-mono px-1 py-0.5 rounded border font-semibold tracking-wider ${getRoleBadgeStyle(
                           currentSession.role
                         )}`}
                       >

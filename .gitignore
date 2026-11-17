@@ -2,6 +2,8 @@
 .env
 .env.local
 *.env
+*.key
+*.pem
 
 # Python & Virtual Environments
 .venv/
@@ -29,8 +31,19 @@ pnpm-debug.log*
 # Database & Storage test artifacts
 *.mdf
 *.ldf
+*.ndf
 *.bak
+*.trn
+*.sqlaudit
+*.xel
 seaweedfs-data/
+data/backups/
+data/recovery_staging/
+data/audit/
+data/extended_events/
+
+# Temporary files
+-w
 
 # IDE & Editor specific
 .idea/

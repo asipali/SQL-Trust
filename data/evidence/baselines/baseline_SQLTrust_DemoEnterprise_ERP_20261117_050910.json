@@ -1,0 +1,422 @@
+{
+  "baseline_id": "89fa813f-4288-46cb-9d6a-95d9575d914e",
+  "baseline_name": "Baseline_SQLTrust_DemoEnterprise_ERP_20261117_050910",
+  "captured_at": "2026-11-17T05:09:10.397000",
+  "database_name": "SQLTrust_DemoEnterprise_ERP",
+  "items": [
+    {
+      "definition_hash": "60f0f921eb11322ccb1651163ce37dba7187ee7b1c48943e9511519430ad75e9",
+      "is_encrypted": false,
+      "item_name": "CustomerOrders",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "OrderID",
+            "is_identity": true,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 1333579789,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 2,
+            "column_name": "CustomerID",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 1333579789,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 3,
+            "column_name": "OrderTotal",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 9,
+            "object_id": 1333579789,
+            "precision": 18,
+            "scale": 2,
+            "type_name": "decimal"
+          },
+          {
+            "column_id": 4,
+            "column_name": "OrderStatus",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 30,
+            "object_id": 1333579789,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "OrderDate",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 8,
+            "object_id": 1333579789,
+            "precision": 23,
+            "scale": 3,
+            "type_name": "datetime"
+          }
+        ],
+        "create_date": "2026-11-17 10:03:52.523000",
+        "modify_date": "2026-11-17 10:03:52.523000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "63642c194b173555f1b682effbdb6fc64f7cc332f23ae01c6073423d6b230d49",
+      "is_encrypted": false,
+      "item_name": "db_denydatareader",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.380000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16392,
+        "principal_name": "db_denydatareader",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000008400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "8813c43181f6a29078c4f7eee742037edec5ee3789aa74316f2038616e22ebe1",
+      "is_encrypted": false,
+      "item_name": "db_backupoperator",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.350000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16389,
+        "principal_name": "db_backupoperator",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000005400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "2e95bac2a5b831afb4041841dadb752fd71c81fe0aae1fece186e6f5c6b45301",
+      "is_encrypted": false,
+      "item_name": "DATABASE_CONFIGURATION",
+      "item_type": "DATABASE_OPTION",
+      "properties": {
+        "collation_name": "SQL_Latin1_General_CP1_CI_AS",
+        "compatibility_level": 160,
+        "create_date": "2026-11-17 10:03:34.327000",
+        "database_id": 6,
+        "is_auto_close_on": true,
+        "is_auto_shrink_on": false,
+        "is_encrypted": false,
+        "is_read_only": false,
+        "is_trustworthy_on": false,
+        "name": "SQLTrust_DemoEnterprise_ERP",
+        "page_verify_option_desc": "CHECKSUM",
+        "recovery_model_desc": "FULL",
+        "state_desc": "ONLINE",
+        "user_access_desc": "MULTI_USER"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "a5947e73b483145331ff4bed7e0ad532689a7c3ae513760b279c78ae0d3d491b",
+      "is_encrypted": false,
+      "item_name": "db_owner",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.333000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16384,
+        "principal_name": "db_owner",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000000400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "69ba122b66fb6f1d97d6a70983f2f7787419dd2dfecdf79ce43c67c2f7bd1ea8",
+      "is_encrypted": false,
+      "item_name": "db_denydatawriter",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.380000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16393,
+        "principal_name": "db_denydatawriter",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000009400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "f6e264288a2829c4a644d106cdb896eb08885cb1f67506048a459020f172af21",
+      "is_encrypted": false,
+      "item_name": "db_securityadmin",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.350000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16386,
+        "principal_name": "db_securityadmin",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000002400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "966fbd000db875175afd85322b1f3d970d94aba314f84ba64ba73c37e04a4ba8",
+      "is_encrypted": false,
+      "item_name": "Transactions",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "TransactionID",
+            "is_identity": true,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 1269579561,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 2,
+            "column_name": "CustomerID",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 1269579561,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 3,
+            "column_name": "Amount",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 9,
+            "object_id": 1269579561,
+            "precision": 18,
+            "scale": 2,
+            "type_name": "decimal"
+          },
+          {
+            "column_id": 4,
+            "column_name": "TransactionType",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 20,
+            "object_id": 1269579561,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 5,
+            "column_name": "TransactionDate",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 8,
+            "object_id": 1269579561,
+            "precision": 23,
+            "scale": 3,
+            "type_name": "datetime"
+          }
+        ],
+        "create_date": "2026-11-17 10:03:52.520000",
+        "modify_date": "2026-11-17 10:03:52.520000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    },
+    {
+      "definition_hash": "73222d1ac66b04ad3f344bf65535edcf02633c2d81285655043479bfe2123415",
+      "is_encrypted": false,
+      "item_name": "db_owner::dbo",
+      "item_type": "ROLE_MEMBER",
+      "properties": {
+        "member_name": "dbo",
+        "role_name": "db_owner"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "75529040fa29044de0fb4836777c07787732bddb5e580c1a0cfe85396cdba077",
+      "is_encrypted": false,
+      "item_name": "db_datareader",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.363000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16390,
+        "principal_name": "db_datareader",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000006400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "fb5c021a9d84c8b43dbccf5664b4e0bab42dc1f17bd04892eaddecb53f6bb2dc",
+      "is_encrypted": false,
+      "item_name": "db_datawriter",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.363000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16391,
+        "principal_name": "db_datawriter",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000007400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "cd5cdcfc11906a0b2bace6694f55a583f4c0797790ffe276e54db52eb6590449",
+      "is_encrypted": false,
+      "item_name": "db_accessadmin",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.333000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16385,
+        "principal_name": "db_accessadmin",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000001400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "246330df8df95716d0d0b9f55b9326fb641808c01dcb801db05eebdd2868f2c1",
+      "is_encrypted": false,
+      "item_name": "db_ddladmin",
+      "item_type": "USER",
+      "properties": {
+        "authentication_type_desc": "NONE",
+        "create_date": "2003-04-08 09:10:42.350000",
+        "default_schema_name": null,
+        "modify_date": "2009-04-13 12:59:14.467000",
+        "principal_id": 16387,
+        "principal_name": "db_ddladmin",
+        "sid_hex": "0x01050000000000090400000000000000000000000000000003400000",
+        "type_desc": "DATABASE_ROLE"
+      },
+      "raw_definition": null,
+      "schema_name": null
+    },
+    {
+      "definition_hash": "5a23ed8a471afa6b7757197e404d78404dfbcecb3b716f1ca3b19025350e7ac0",
+      "is_encrypted": false,
+      "item_name": "Customers",
+      "item_type": "TABLE",
+      "properties": {
+        "columns": [
+          {
+            "column_id": 1,
+            "column_name": "CustomerID",
+            "is_identity": true,
+            "is_nullable": false,
+            "max_length": 4,
+            "object_id": 1205579333,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 2,
+            "column_name": "FullName",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 100,
+            "object_id": 1205579333,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 3,
+            "column_name": "Email",
+            "is_identity": false,
+            "is_nullable": false,
+            "max_length": 120,
+            "object_id": 1205579333,
+            "precision": 0,
+            "scale": 0,
+            "type_name": "varchar"
+          },
+          {
+            "column_id": 4,
+            "column_name": "CreditScore",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 4,
+            "object_id": 1205579333,
+            "precision": 10,
+            "scale": 0,
+            "type_name": "int"
+          },
+          {
+            "column_id": 5,
+            "column_name": "CreatedAt",
+            "is_identity": false,
+            "is_nullable": true,
+            "max_length": 8,
+            "object_id": 1205579333,
+            "precision": 23,
+            "scale": 3,
+            "type_name": "datetime"
+          }
+        ],
+        "create_date": "2026-11-17 10:03:52.517000",
+        "modify_date": "2026-11-17 10:03:52.523000",
+        "type_desc": "USER_TABLE"
+      },
+      "raw_definition": null,
+      "schema_name": "dbo"
+    }
+  ],
+  "server_name": "localhost\\SQLEXPRESS",
+  "sha256_manifest": "554dfcd586effbeb9fee8ad8a4f884d5efc8ffe01e6dc47d988ec64f05e6fa97",
+  "signature": "8ynohgNLCvPUAFMSHM+DLbb52TmIjVwbe30XV5P6Zl2TdB4oYszj+6UO+FYZwFW41DPB7/tT+vpfPcjzjUOBBw==",
+  "total_objects": 3,
+  "total_permissions": 0,
+  "total_principals": 9
+}

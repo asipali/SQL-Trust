@@ -101,6 +101,11 @@ class RecoveryRecommendationEngine:
             reverse=True
         )
 
+        # Clear existing recommendations for this database to avoid duplicate ranks
+        self.db.query(RecoveryRecommendation).filter(
+            RecoveryRecommendation.database_id == database_id
+        ).delete()
+
         recommendations: List[RecoveryRecommendation] = []
 
         for idx, cand in enumerate(candidates, start=1):
@@ -146,7 +151,7 @@ class RecoveryRecommendationEngine:
                 rank_order=idx,
                 trust_classification=asm.trust_classification,
                 eligibility_status=elg.eligibility_status,
-                ranking_score=round(cand["rank_score"], 2),
+                ranking_score=round(max(0.0, min(100.0, cand["rank_score"])), 2),
                 rank_rationale=" ".join(rationale_parts),
                 tradeoff_analysis=" ".join(tradeoff_parts),
                 recommended_next_step=next_step

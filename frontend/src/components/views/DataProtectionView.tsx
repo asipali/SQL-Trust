@@ -122,7 +122,8 @@ export const DataProtectionView: React.FC<DataProtectionViewProps> = ({
     try {
       await axios.post(`${apiBase}/api/v1/databases/register`, {
         database_name: databaseName,
-        is_system: isSystem
+        is_system: isSystem,
+        allow_system_override: isSystem
       })
       onRefresh()
     } catch (err: any) {

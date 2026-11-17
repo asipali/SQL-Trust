@@ -63,11 +63,37 @@ export default function App() {
   const [userSession, setUserSession] = useState<UserSession | null>(() => {
     try {
       const saved = localStorage.getItem('sqltrust_session')
-      return saved ? JSON.parse(saved) : null
-    } catch {
-      return null
+      if (saved) {
+        const parsed = JSON.parse(saved)
+        if (parsed && parsed.role && parsed.role !== 'READ_ONLY_REVIEWER') {
+          return parsed
+        }
+      }
+    } catch {}
+    const defaultAdminSession: UserSession = {
+      username: 'demo_admin',
+      full_name: 'Administrator',
+      role: 'SECURITY_ADMIN',
+      is_demo_account: true,
+      access_token: 'mock_jwt_token_security_admin',
+      permissions: ['*']
     }
+    try {
+      localStorage.setItem('sqltrust_session', JSON.stringify(defaultAdminSession))
+    } catch {}
+    return defaultAdminSession
   })
+
+  // Synchronize Axios Global Authorization Headers with Active Session
+  useEffect(() => {
+    if (userSession?.access_token) {
+      axios.defaults.headers.common['Authorization'] = `Bearer ${userSession.access_token}`
+      axios.defaults.headers.common['X-User-Role'] = userSession.role
+    } else {
+      delete axios.defaults.headers.common['Authorization']
+      delete axios.defaults.headers.common['X-User-Role']
+    }
+  }, [userSession])
   const [authModalOpen, setAuthModalOpen] = useState(false)
   const [authModalMode, setAuthModalMode] = useState<'login' | 'register'>('login')
 

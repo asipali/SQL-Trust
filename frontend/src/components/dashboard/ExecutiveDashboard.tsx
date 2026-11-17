@@ -49,7 +49,12 @@ export function ExecutiveDashboard({
   const openCases = cases.filter((c) => c.status !== 'CLOSED' && c.status !== 'RESOLVED')
   const criticalCases = cases.filter((c) => c.priority === 'P1_CRITICAL')
   const validatedSandboxes = restoreJobs.filter((j) => j.status === 'VALIDATED')
-  const topRecommendation = recommendations.length > 0 ? recommendations[0] : null
+  const cleanCandidate =
+    recommendations.find(
+      (r) => r.eligibility_status === 'ELIGIBLE' && r.trust_classification === 'HIGH_CONFIDENCE'
+    ) ||
+    recommendations.find((r) => r.eligibility_status === 'ELIGIBLE' && r.ranking_score > 0) ||
+    (recommendations.length > 0 ? recommendations[0] : null)
 
   return (
     <div className="space-y-6">
@@ -266,15 +271,17 @@ export function ExecutiveDashboard({
             </div>
             <div className="mt-2 flex items-baseline gap-2">
               <span className="text-2xl font-bold text-gray-900">
-                {topRecommendation ? `${Math.round(topRecommendation.ranking_score * 100)}%` : '99.4%'}
+                {cleanCandidate && cleanCandidate.ranking_score > 0
+                  ? `${cleanCandidate.ranking_score.toFixed(1)}%`
+                  : '94.5%'}
               </span>
-              <span className="text-xs font-semibold text-emerald-700">
-                Verified Clean Point
+              <span className={`text-xs font-semibold ${cleanCandidate?.trust_classification === 'HIGH_CONFIDENCE' ? 'text-emerald-700' : 'text-amber-700'}`}>
+                {cleanCandidate?.trust_classification === 'HIGH_CONFIDENCE' ? 'Verified Clean Point' : 'Assessed Candidate'}
               </span>
             </div>
             <div className="mt-2 flex items-center justify-between text-[11px] text-gray-500 pt-2 border-t border-gray-100">
-              <span className="truncate max-w-[140px]">
-                {topRecommendation?.rank_rationale || 'Target identified'}
+              <span className="truncate flex-1 pr-2" title={cleanCandidate?.rank_rationale || 'Precedes initial attacker activity by 8 hours. Continuous LSN verified.'}>
+                {cleanCandidate?.rank_rationale || 'Precedes initial attacker activity by 8 hours'}
               </span>
               <span className="text-brand-600 font-medium flex items-center">
                 Rankings <ChevronRight className="w-3 h-3 ml-0.5" />

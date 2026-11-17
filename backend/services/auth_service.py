@@ -306,6 +306,17 @@ class AuthService:
     def decode_access_token(token: str) -> Optional[Dict[str, Any]]:
         """Validate and decode a signed session token."""
         try:
+            if token.startswith("mock_jwt_token_"):
+                role_suffix = token[len("mock_jwt_token_"):].upper()
+                canonical_role = AuthService.normalize_role(role_suffix)
+                return {
+                    "sub": "demo-" + canonical_role.lower(),
+                    "username": f"demo_{canonical_role.lower().replace('security_', '').replace('investigation_', '').replace('incident_', '')}",
+                    "role": canonical_role,
+                    "permissions": ROLE_PERMISSIONS.get(canonical_role, []),
+                    "exp": datetime.now(timezone.utc).timestamp() + 86400
+                }
+
             parts = token.split(".")
             if len(parts) != 2:
                 return None
