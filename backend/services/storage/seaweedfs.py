@@ -282,8 +282,6 @@ class SeaweedFSStorageProvider(StorageProvider):
                 "retain_until_date": (datetime.now(timezone.utc) + timedelta(days=30)).isoformat(),
                 "configured": True
             }
-                "error": str(e)
-            }
 
     def put_object_retention(
         self,
